@@ -45,10 +45,10 @@ The system implements a complete genetic programming pipeline:
 The system includes sophisticated features like:
 -   Tree depth limits to prevent overly complex formulas.
 -   Multiple mathematical operations (trigonometric, logarithmic, arithmetic).
-    - Arithmetic operations: $+$, $-$, $*$, $/$
-    - Trigonometric functions: $sin(x)$, $cos(x)$, $tan(x)$, $sin^2(x)$, $cos^2(x)$, $tan^2(x)$
-    - Exponential and logarithmic functions: $e^x$ ($exp(x)$), $ln(x)$
-    - Root and absolute value functions: $sqrt(x)$, $|x|$
+    - Arithmetic operations: $+$, $-$, $\times$, $\div$
+    - Trigonometric functions: $\sin{x}$, $\cos{x}$, $\tan{x}$, $\sin^2{x}$, $\cos^2{x}$, $\tan^2{x}$
+    - Exponential and logarithmic functions: $e^x$, $ln(x)$
+    - Square root and absolute value functions: $\sqrt{x}$, $\left| x \right|$
 -   Comprehensive performance metrics (accuracy, precision, recall, F-score).
 
 ### Design Specifications
@@ -105,9 +105,9 @@ accuracy. The high precision (99.03% training, 100% test) indicates very few fal
 
 
 The best evolved solution was:
-$$
+```math
 \tan^2\big(\tan(\cos(\cos^2(\text{Close})))\big) \,/\, \sin(\text{Close} - \text{Open})
-$$
+```
 
 GP’s exceptional performance can be attributed to many key factors. Most importantly, the algorithm’s ability to evolve domain-specific mathematical expressions allows it to discover complex non-linear relationships that are particularly relevant to the given data. The evolved expression represents a feature that traditional algorithms did not discover.
 
